@@ -33,6 +33,7 @@ Now, when the student is at school, they can simply create a new carpool and wai
 Also likely: Bolts, Bond, ConvenienceKit
 
 #### Screens
+Splash Screen: ![SplashScreen](SchoolPool-ios/PrototypeScreenshots/SplashScreen.png)
 
 #### Data Model
 

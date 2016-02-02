@@ -15,6 +15,7 @@
 		286A27DE1C5EEB0F005D8E1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 286A27DC1C5EEB0F005D8E1B /* LaunchScreen.storyboard */; };
 		286A27E91C5EEB0F005D8E1B /* SchoolPoolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286A27E81C5EEB0F005D8E1B /* SchoolPoolTests.swift */; };
 		286A27F41C5EEB0F005D8E1B /* SchoolPoolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286A27F31C5EEB0F005D8E1B /* SchoolPoolUITests.swift */; };
+		DED6EDD64C96D0E6A1745C7F /* Pods_SchoolPool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F3AF02BE9D4A38CE56B0A4A /* Pods_SchoolPool.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,9 @@
 		286A27EF1C5EEB0F005D8E1B /* SchoolPoolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SchoolPoolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		286A27F31C5EEB0F005D8E1B /* SchoolPoolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolPoolUITests.swift; sourceTree = "<group>"; };
 		286A27F51C5EEB0F005D8E1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F3AF02BE9D4A38CE56B0A4A /* Pods_SchoolPool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SchoolPool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE8E3854A0C64713170A84E1 /* Pods-SchoolPool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SchoolPool.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SchoolPool/Pods-SchoolPool.debug.xcconfig"; sourceTree = "<group>"; };
+		DED49E39ADB39D6E1146AE65 /* Pods-SchoolPool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SchoolPool.release.xcconfig"; path = "Pods/Target Support Files/Pods-SchoolPool/Pods-SchoolPool.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DED6EDD64C96D0E6A1745C7F /* Pods_SchoolPool.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +81,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1FA79F2D1198764B6B32D626 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE8E3854A0C64713170A84E1 /* Pods-SchoolPool.debug.xcconfig */,
+				DED49E39ADB39D6E1146AE65 /* Pods-SchoolPool.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		286A27C41C5EEB0F005D8E1B = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +97,8 @@
 				286A27E71C5EEB0F005D8E1B /* SchoolPoolTests */,
 				286A27F21C5EEB0F005D8E1B /* SchoolPoolUITests */,
 				286A27CE1C5EEB0F005D8E1B /* Products */,
+				1FA79F2D1198764B6B32D626 /* Pods */,
+				D0A5939F825CA03A6056CC29 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +144,14 @@
 			path = SchoolPoolUITests;
 			sourceTree = "<group>";
 		};
+		D0A5939F825CA03A6056CC29 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6F3AF02BE9D4A38CE56B0A4A /* Pods_SchoolPool.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +159,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 286A27F81C5EEB0F005D8E1B /* Build configuration list for PBXNativeTarget "SchoolPool" */;
 			buildPhases = (
+				3D86BC27825D6F18E021F309 /* Check Pods Manifest.lock */,
 				286A27C91C5EEB0F005D8E1B /* Sources */,
 				286A27CA1C5EEB0F005D8E1B /* Frameworks */,
 				286A27CB1C5EEB0F005D8E1B /* Resources */,
+				CE9C54A6C27B52BE01946ADE /* Embed Pods Frameworks */,
+				E811D41AD59E9A788AA61D26 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +280,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D86BC27825D6F18E021F309 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CE9C54A6C27B52BE01946ADE /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SchoolPool/Pods-SchoolPool-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E811D41AD59E9A788AA61D26 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SchoolPool/Pods-SchoolPool-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		286A27C91C5EEB0F005D8E1B /* Sources */ = {
@@ -401,6 +476,7 @@
 		};
 		286A27F91C5EEB0F005D8E1B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE8E3854A0C64713170A84E1 /* Pods-SchoolPool.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -413,6 +489,7 @@
 		};
 		286A27FA1C5EEB0F005D8E1B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DED49E39ADB39D6E1146AE65 /* Pods-SchoolPool.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -490,6 +567,7 @@
 				286A27FA1C5EEB0F005D8E1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		286A27FB1C5EEB0F005D8E1B /* Build configuration list for PBXNativeTarget "SchoolPoolTests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +576,7 @@
 				286A27FD1C5EEB0F005D8E1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		286A27FE1C5EEB0F005D8E1B /* Build configuration list for PBXNativeTarget "SchoolPoolUITests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +585,7 @@
 				286A28001C5EEB0F005D8E1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

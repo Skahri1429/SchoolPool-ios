@@ -52,5 +52,36 @@ Profile Tab:
 ![Profile Screen](/PrototypeScreenshots/iPhone 6.png)
 
 #### Data Model
+Launchscreen.storyboard
+
+##### View Controllers 
+- Sign up/Login
+- ⋅⋅⋅ SetupFamilyViewController
+- Tab Bar Controller
+- ⋅⋅⋅ HomeViewController
+- ⋅⋅⋅⋅⋅ CarpoolDetailViewController
+- ⋅⋅⋅ SearchViewController
+- ⋅⋅⋅⋅⋅ SearchResultsViewController
+- ⋅⋅⋅ RequestsViewController
+- ⋅⋅⋅⋅⋅ CarpoolDetailViewController
+- ⋅⋅⋅ ProfileViewController
+- ⋅⋅⋅⋅⋅ FamilyProfileScopeView
+- ⋅⋅⋅⋅⋅⋅  MemberViewController
+- ⋅⋅⋅⋅⋅ GivenScopeView
+- ⋅⋅⋅⋅⋅ TakenScopeView
+
+##### Object Hierarchy
+- School Community
+- ⋅⋅⋅ Carpool
+- ⋅⋅⋅⋅⋅ Family
+- ⋅⋅⋅⋅⋅⋅  Family Member
+- ⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅ Email
+- ⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅ Profile Photo
+- ⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅ Number
+- ⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅ Driver Status boolean
+- ⋅⋅⋅⋅⋅⋅  Vehicle
+- ⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅ Photo
+- ⋅⋅⋅⋅⋅⋅  Ratio (rides taken vs given)
+- ⋅⋅⋅⋅⋅⋅  School Communities that this family is a member of
 
 ### Ideas for Future Versions
